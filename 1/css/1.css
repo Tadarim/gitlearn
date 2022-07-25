@@ -1,0 +1,161 @@
+.topbar-wrapper{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.topbar{
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(red, green, blue, alpha);
+    text-align: center;
+    line-height: 50px;
+}
+
+.topbar .title{
+    text-align: center;
+    width: 40%;
+    float: left;
+}
+
+.topbar .nav{
+    width: 60%;
+    float: right;
+}
+
+.topbar .nav li{
+    float: left;
+    width: 20%;
+}
+
+.topbar .nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    scroll-behavior: smooth;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+}
+
+main::-webkit-scrollbar{
+    display: none;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#one{
+    background-color: #bfa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #one .img-list{
+     position: relative;
+    /* background-color: #000; */
+    width: 80%;
+    height: 80%;
+}
+
+#one .img-list img:first-child{
+    height: 500px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+#one .img-list img:nth-child(2){
+    height: 400px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+#one .img-list img:last-child{
+    height: 140px;
+    width: 625px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#two{
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#two img:first-child{
+    width: 40%;
+    height: 425px;
+}
+
+#two img:last-child{
+    width: 40%;
+}
+
+#three{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#three  img:first-child{
+    width: 30%;
+    height: 400px;
+}
+#three  img:nth-child(2){
+    width: 30%;
+    height: 400px;
+}
+#three  img:last-child{
+    width: 30%;
+    height: 400px;
+}
+
+#four{
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#four img:first-child{
+    width: 45%;
+}
+
+#four img:last-child{
+    width: 45%;
+}
+
+#five{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#five img:first-child{
+    width: 50%;
+    height: 220px;
+    position: absolute;
+    top: 50px;
+}
+
+#five img:last-child{
+    width: 50%;
+    height: 450px;
+    position: absolute;
+    bottom: 0px;
+}
